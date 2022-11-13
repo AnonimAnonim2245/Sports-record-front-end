@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sport Records </title>
+     <style>
+    
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Century Gothic;
+        font-size: 20px;
+        }
+        body{
+        font-family: 'Playfair Display', serif;
+        }
+        .container {
+            animation: transitionIn 0.75s;
+        }
+        @keyframes transitionIn {
+            from {
+               opacity: 0;
+                transform: rotateX(-10deg);
+
+
+            }
+            to {
+                opacity: 1;
+                transform: rotateX(0);
+
+            }
+        }
+
+
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/nadia.jpg);
+            height: 520vh;
+            background-size: cover;
+            background-position:center;
+        }
+        ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 25px;
+        }
+
+        ul li{
+           display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;  
+            transition: 0.6s ease;
+
+        }
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+
+        }
+        ul li.active a{
+           background-color: #fff;
+            color: #000;
+        }
+        .logo img{
+            float:left;
+            width: 150px;
+            height: auto;
+        }
+        .main{
+        max-width: 2400px;
+        margin: auto;
+        }
+        .title{
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-40%,-300%);
+        }
+        .title h1{
+            color:#fff;
+            font-size: 70px;
+        }
+        .row{
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2 h1{
+            color: #fff;
+            font-size: 40px;
+            flex-basis: 50%;
+            min-width: 700px;
+            transform: translate(-10%,150%);
+        }
+        p{
+            color:#fff;
+         }
+         .col-3 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width:100px;
+             top : 550px;
+             left: 50px;
+         }
+         .col-3 h1{
+             position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top : 400px;
+             left: 50px;
+         }
+         .col-3 p{
+            position: absolute;
+             flex-basis: 50%;
+             min-width:300px;
+             top : 450px;
+             left: 50px;
+         }
+         .col-4 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 1050px;
+         }
+         .col-4 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 900px;
+             left: 50px;
+             
+         }
+         .col-4 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 950px;
+         }
+           .col-5 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 1850px;
+         }
+         .col-5 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 1600px;
+             left: 50px;
+             
+         }
+         .col-5 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 1700px;
+         }  
+         .col-6 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 2300px;
+             
+         }
+          .col-6 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 2200px;
+             left: 50px;
+             
+         }
+         .col-6 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 2250px;
+         } 
+           .col-7 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 2800px;
+             
+         }
+          .col-7 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 2650px;
+             left: 50px;
+             
+         }
+         .col-7 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 2700px;
+         }
+            .col-8 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 3250px;
+             
+         }
+          .col-8 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 3150px;
+             left: 50px;
+             
+         }
+         .col-8 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 3200px;
+         } 
+         
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header >
+        <div class="header"></div>
+        <div class="main">
+            <div class="logo">
+                <img src="images/logo.jpg">
+            </div>
+            <ul>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            
+            </ul>
+            
+        
+        </div>
+        <div class="container">
+            <div class="title">
+                <h1 align="center">Sports Records</h1>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>In this page we present various sport records from all times. If you want to add your sport records. Please contact us.</h1>
+                </div>
+                <div class="col-3">
+                    <img src="images/1976.jpg">
+                    <h1>First perfect ten - Nadia Comăneci</h1>
+                    <p>In 1976 in Montreal, Romanian athlete Nadia Comaneci became the first gymnast in Olympic history to be awarded the perfect score of 10.0 for her performance on the uneven bars. She went on to record the perfect 10.0 six more times and became the youngest all-around Olympic gold medallist ever.</p> 
+                </div>
+                <div class="col-4">
+                    <img src="images/pele.jpg">
+                    <h1>Youngest soccer player to score in a World Cup</h1>
+                    <p>Brazilian legend Pele was the youngest to accomplish the feat, having scored six goals in four games at the 1958 World Cup in Sweden when he was just 17 years old.</p>
+                
+                </div>
+                <div class="col-5">
+                    <img src="images/nadal.jpg" width="400" 
+     height="300" >
+                    <h1>Most Grand Titles</h1>
+                    <p>In January, Nadal won his 89th ATP singles title at Melbourne Summer Set 1, defeating first time finalist Maxime Cressy in the final. Following wins over Karen Khachanov, Denis Shapovalov, and Matteo Berrettini, Nadal won his second Australian Open title and a 21st major title overall by defeating Daniil Medvedev in a five-set final, coming back from two sets down. With the win, Nadal surpassed a tie held with Novak Djokovic and Roger Federer for the most men's singles major titles of all-time. Nadal also became the second man in the Open Era, after Djokovic, to complete the double career Grand Slam.</p>
+                
+                </div>
+                <div class="col-6">
+                    <img src="images/Nikola_Jokic.jpg" width="400" 
+     height="300"  >
+                    <h1>Quickest to reach a triple-double</h1>
+                    <p>14 minutes and 33 seconds by Nikola Jokić, Denver Nuggets (at Milwaukee Bucks) on February 15, 2018.</p>
+                </div>
+                <div class="col-7">
+                    <img src="images/glengorbus.jpg" width="400" 
+     height="300"  >
+                    <h1>Longest Throw in Baseball</h1>
+                    <p>Glen Gorbous (Canada) threw a baseball 445 ft. 10 inches on August 1, 1957.</p>
+                
+                </div>
+                <div class="col-8">
+                    <img src="images/Stefan-Kraft.jpg" width="400" height="300">
+                    <h1>Longest ski jump</h1>
+                    <p>Stefan Kraft holds the official record for the world's longest ski jump with 253.5 metres (832 ft), set on the ski flying hill in Vikersund in 2017.</p>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+
